@@ -13,11 +13,11 @@ export default function App() {
       <>
         <Navbar/>
         <Routes>
-          <Route path="/" Component={<Home/>}>
-            <Route path="services" Component={<Service/>} />
-            <Route path="contact" Component={<Contact/>} />
-            <Route path="*" Component={<NoPage/>} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="services" element={<Service />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        
         </Routes>
       </>
     </BrowserRouter>
